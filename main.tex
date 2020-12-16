@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=2.3cm,top=2cm,right=2.3cm,nofoot]{geometry}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+\usepackage{microtype}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{moreverb}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{makecell}
+\usepackage{wasysym}
+\definecolor{listinggray}{gray}{0.98}
+\definecolor{lbcolor}{rgb}{0.98,0.98,0.98}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,
+	rulecolor=,
+	language=matlab,
+    basicstyle=\scriptsize\ttfamily,
+    upquote=true,
+    aboveskip={1.5\baselineskip},
+    columns=fixed,
+    showstringspaces=false,
+    extendedchars=true,
+    breaklines=true,
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=single,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    identifierstyle=\ttfamily,
+    keywordstyle=\color[rgb]{0,0,1},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
+\usepackage{tikz}
+\usepackage{pgfplots} 
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{siunitx}
+\pgfplotsset{compat=newest} 
+\pgfplotsset{plot coordinates/math parser=false}
+\usepackage{pdfpages}
+\usepackage{placeins}
+\usepackage{wrapfig}
+
+
+
+
+
+\newlength\fwidth
+\newlength\fheight
+\pagestyle{myheadings}
+
+\pgfplotsset{every axis/.append style={
+        scaled y ticks = false, 
+        scaled x ticks = false, 
+        y tick label style={/pgf/number format/.cd, fixed, fixed zerofill,
+                            int detect,1000 sep={\;},precision=3},
+        x tick label style={/pgf/number format/.cd, fixed, fixed zerofill,
+                            int detect, 1000 sep={},precision=3}
+    }
+}
+
+\usepackage{eso-pic}
+\usepackage{ifthen}
+
+\usepackage[nottoc]{tocbibind}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{bibben.bib}
+
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage{enumitem}
+
+\title{Project 3: Approximate Bayesian Computation}
+\author{
+  Kevin Andersson\\
+  \texttt{kevinan@student.chalmers.se}
+  \and
+   Eric Lindgren\\
+  \texttt{ericlin@chalmers.se}
+}
+
+\markright{Kevin Andersson and Eric Lindgren, Group 7}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+% \newpage
+\pagenumbering{arabic}% Arabic page numbers (and reset to 1)
+\setcounter{page}{1}
+\section{Introduction and Background}
+
+
+
+\section{Methodology}
+
+% BEskriv modellen här - kanske plotta några simulerade distributioner? Men ha inte med det i resultatet, endast NN och ABC i resultat.
+
+\subsection[Task 1]{Neural network as a generator of prospective samples}
+\label{sec:method_NN}
+
+
+\subsection[Task 4]{Approximate Bayesian Computation}
+\label{sec:method_ABC}
+
+\section{Results and discussion}
+
+\subsection[Task 1]{Neural network as a generator of prospective samples}
+\label{sec:result_NN}
+
+
+\subsection[Task 4]{Approximate Bayesian Computation}
+\label{sec:result__ABC}
+
+% TODO Lägg till modell från task 3
+
+\printbibliography
+
+\end{document}
